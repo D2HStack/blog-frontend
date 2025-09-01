@@ -1,5 +1,3 @@
-// app/page.tsx
-
 export default function HomePage() {
   return (
     <main style={{ padding: "2rem", textAlign: "center" }}>
