@@ -17,11 +17,12 @@ export default function Footer() {
           <Stack direction="row" spacing={0} alignItems="center" sx={{ height: footerHeight }}>
             <Typography variant="caption" sx={{ mr: 6 }}>Follow Us</Typography>
             <Stack direction="row" spacing={1} sx={{ ml: 2 }}>
-              <IconButton aria-label="Instagram" href="https://instagram.com" target="_blank"  > <Typography variant="iconMedium"><Instagram fontSize="inherit"/></Typography></IconButton>
-              <IconButton aria-label="Twitter" href="https://twitter.com" target="_blank"><Typography variant="iconMedium"><Twitter fontSize="inherit" /></Typography></IconButton>
-              <IconButton aria-label="YouTube" href="https://youtube.com" target="_blank"><Typography variant="iconMedium"><YouTube fontSize="inherit" /></Typography></IconButton>
-              <IconButton aria-label="Facebook" href="https://facebook.com" target="_blank"><Typography variant="iconMedium"><Facebook fontSize="inherit" /></Typography></IconButton>
-              <IconButton aria-label="LinkedIn" href="https://linkedin.com" target="_blank"><Typography variant="iconMedium"><LinkedIn fontSize="inherit" /></Typography></IconButton>
+              {/* <IconButton aria-label="Instagram" href="https://instagram.com" target="_blank"  > <Typography variant="iconMedium"><Instagram fontSize="inherit"/></Typography></IconButton> */}
+              <IconButton aria-label="Instagram" href="https://instagram.com" target="_blank"  ><Instagram fontSize="small"/></IconButton>
+              <IconButton aria-label="Twitter" href="https://twitter.com" target="_blank"><Twitter fontSize="small" /></IconButton>
+              <IconButton aria-label="YouTube" href="https://youtube.com" target="_blank"><YouTube fontSize="small" /></IconButton>
+              <IconButton aria-label="Facebook" href="https://facebook.com" target="_blank"><Facebook fontSize="small" /></IconButton>
+              <IconButton aria-label="LinkedIn" href="https://linkedin.com" target="_blank"><LinkedIn fontSize="small" /></IconButton>
             </Stack>
           </Stack>
 
@@ -55,7 +56,7 @@ export default function Footer() {
             {/* Right side: Help + language selector */}
             <Grid size={4}>
               <Stack direction="row" spacing={1} alignItems="center" justifyContent="flex-end">
-                <HelpIcon sx={{ fontSize: "var(--mui-typography-iconMedium-fontSize)" }}/>
+                <HelpIcon fontSize="small"/>
                 <Typography variant="caption">Help</Typography>
                 <DropdownMenu items={languageMenu} width={180} borderBottom={true} borderColor="divider" typoVariant="caption" />
                 

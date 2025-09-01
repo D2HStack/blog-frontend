@@ -1,6 +1,20 @@
 'use client';
 
 import { createTheme } from "@mui/material/styles";
+import { PaletteOptions } from "@mui/material/styles";
+
+declare module "@mui/material/styles" {
+  interface Theme {
+    customColors: {
+      headerFontColor: string;
+    };
+  }
+  interface ThemeOptions {
+    customColors?: {
+      headerFontColor?: string;
+    };
+  }
+}
 
 const theme = createTheme({
     cssVariables: true,
@@ -23,8 +37,11 @@ const theme = createTheme({
         },
     },
     customHeight: {
-    footerHeight: 100, // pixels
-  },
+        footerHeight: 100, // pixels
+    },
+    customColors: {
+        headerFontColor: "#5F6368",
+    },
 });
 
 export default theme;
